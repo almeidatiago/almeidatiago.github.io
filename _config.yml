@@ -87,7 +87,7 @@ author:
   employer         :
   pubmed           : #"https://www.ncbi.nlm.nih.gov/pubmed/?term=john+snow"
   googlescholar    : "https://scholar.google.com.br/citations?user=PMY7HeAAAAAJ&hl=pt-BR&authuser=1"
-  email            :
+  email            : "tiagoalmeida [at] uft.edu.br"
   researchgate     : "https://www.researchgate.net/profile/Tiago-Almeida-13"
   uri              :
   bitbucket        :
@@ -115,9 +115,10 @@ author:
   xing             :
   youtube          :
   wikipedia        :
-  lattes           : "http://lattes.cnpq.br/9526374567175744"
-
-
+  lattes           : "9526374567175744"
+  #openpgp          : "tiago.pub"
+  
+  
 # Reading Files
 include:
   - .htaccess
