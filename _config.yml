@@ -82,7 +82,7 @@ analytics:
 author:
   name             : "Tiago Almeida"
   avatar           : "IMG-20181228-WA0018.jpg"
-  bio              : "I'm a professor of Computer Science at Universidade Federal do Tocantins, Brazil. I'm also a doctorate candidate at the Institute of Computing, UNICAMP, Brazil. "
+  bio              : "I'm a professor of Computer Science at Universidade Federal do Tocantins, Brazil."
   location         : "Palmas / TO, Brazil"
   employer         :
   pubmed           : #"https://www.ncbi.nlm.nih.gov/pubmed/?term=john+snow"
@@ -183,27 +183,39 @@ collections:
   publications:
     output: true
     permalink: /:collection/:path/
-  portfolio:
+  contests:
     output: true
+    permalink: /:collection/:path/
+  journals:
+    output: true
+    permalink: /:collection/:path/
+  dissertations:
+    output: true
+    permalink: /:collection/:path/
+  portfolio:
+    output: false
     permalink: /:collection/:path/
   talks:
     output: true
+    permalink: /:collection/:path/
+  preprints:
+    output: false
     permalink: /:collection/:path/
 
 
 # Defaults
 defaults:
   # _posts
-  #- scope:
-  #    path: ""
-  #    type: posts
-  #  values:
-  #    layout: single
-  #    author_profile: true
-  #    read_time: true
-  #    comments: true
-  #    share: true
-  #    related: true
+  - scope:
+      path: ""
+      type: posts
+    values:
+      layout: single
+      author_profile: true
+      read_time: true
+      comments: true
+      share: true
+      related: true
   # _pages
   - scope:
       path: ""
@@ -230,22 +242,22 @@ defaults:
       share: true
       comments: true
   # _portfolio
-  #- scope:
-  #    path: ""
-  #    type: portfolio
-  #  values:
-  #    layout: single
-  #    author_profile: true
-  #    share: true
-  #    comment: true
+  - scope:
+      path: ""
+      type: portfolio
+    values:
+      layout: single
+      author_profile: true
+      share: true
+      comment: true
   # _talks
-  #- scope:
-  #    path: ""
-  #    type: talks
-  #  values:
-  #    layout: talk
-  #    author_profile: true
-  #    share: true
+  - scope:
+      path: ""
+      type: talks
+    values:
+      layout: talk
+      author_profile: true
+      share: true
 
 # Sass/SCSS
 sass:
@@ -311,3 +323,5 @@ compress_html:
   clippings: all
   ignore:
     envs: development
+    
+theme: jekyll-theme-slate
