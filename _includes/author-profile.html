@@ -118,6 +118,15 @@
       {% if author.lattes %}
         <li><a href="http://lattes.cnpq.br/{{ author.lattes }}"><img src="/images/lattes.png" style="width:8%"> Curriculum Lattes</a></li>
       {% endif %}
+      {% if author.clarivate %}
+        <li><a href="https://www.webofscience.com/wos/author/record/{{ author.clarivate }}"><img src="/images/CLVT.png" style="width:8%"> Web of Science</a></li>
+      {% endif %}
+      {% if author.scopus %}
+        <li><a href="https://www.scopus.com/authid/detail.uri?authorId={{ author.scopus }}"><img src="/images/sc.ico" style="width:8%"> Scopus</a></li>
+      {% endif %}
+      {% if author.dblp %}
+        <li><a href="{{ author.dblp }}"><img src="/images/dblp.png" style="width:8%"> DBLP</a></li>
+      {% endif %}
       {% if author.wikipedia %}
         <li><a href="https://en.wikipedia.org/wiki/User:{{ author.wikipedia }}"><i class="fab fa-fw fa-wikipedia-w" aria-hidden="true"></i> Wikipedia</a></li>
 {% endif %}
