@@ -127,6 +127,9 @@
       {% if author.dblp %}
         <li><a href="{{ author.dblp }}"><img src="/images/dblp.png" style="width:8%"> DBLP</a></li>
       {% endif %}
+      {% if author.semanticscholar %}
+        <li><a href="https://www.semanticscholar.org/author/{{ author.semanticscholar }}"><img src="/images/S2_Logo_1_.png" style="width:8%"> Semantic Scholar</a></li>
+      {% endif %}
       {% if author.wikipedia %}
         <li><a href="https://en.wikipedia.org/wiki/User:{{ author.wikipedia }}"><i class="fab fa-fw fa-wikipedia-w" aria-hidden="true"></i> Wikipedia</a></li>
 {% endif %}
